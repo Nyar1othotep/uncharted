@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/uncharted/static/css/main.633c5874.css",
+    "main.js": "/uncharted/static/js/main.48c1650a.js",
+    "static/media/collection-bg.png": "/uncharted/static/media/collection-bg.0d32964801102706c139.png",
+    "static/media/some-bg.png": "/uncharted/static/media/some-bg.649c865c94122d029a5f.png",
+    "static/media/main-bg.png": "/uncharted/static/media/main-bg.dd6f41a867206906c385.png",
+    "static/media/card-bg.png": "/uncharted/static/media/card-bg.1c3b0a9ecca3ee3a4c93.png",
+    "static/media/card-3.png": "/uncharted/static/media/card-3.d1a31b0bc0db3038732f.png",
+    "static/media/card-1.png": "/uncharted/static/media/card-1.c9b2ecbd8d920054a189.png",
+    "static/media/card-2.png": "/uncharted/static/media/card-2.7bdd1592ff683139608c.png",
+    "static/media/collection.png": "/uncharted/static/media/collection.ae0aed0976cdda76f35c.png",
+    "static/media/logo.png": "/uncharted/static/media/logo.a966be789d815f15a23f.png",
+    "static/media/Rolling-1s-200px.svg": "/uncharted/static/media/Rolling-1s-200px.69ade97631c7490c9d427e67d90076dc.svg",
+    "index.html": "/uncharted/index.html",
+    "main.633c5874.css.map": "/uncharted/static/css/main.633c5874.css.map",
+    "main.48c1650a.js.map": "/uncharted/static/js/main.48c1650a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.633c5874.css",
+    "static/js/main.48c1650a.js"
+  ]
+}

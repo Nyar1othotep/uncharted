@@ -1,0 +1,33 @@
+.collection-list {
+   padding: 0px 0px 70px 0px;
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px -15px;
+      row-gap: 30px;
+   }
+   &__column {
+      padding: 0px 15px;
+      flex: 0 1 33.333%;
+   }
+   &__item img {
+      width: 100%;
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+	.collection-list {
+		&__column {
+			flex: 0 1 50%;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.collection-list {
+		&__column {
+			flex: 0 1 100%;
+		}
+	}
+}

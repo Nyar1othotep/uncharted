@@ -1,0 +1,110 @@
+body.lock {
+	overflow: hidden;
+}
+
+.header {
+   width: 100%;
+   background-color: #121314;
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 81px;
+   }
+   &__logo img {
+      width: 151px;
+   }
+   &__burger {
+      display: none;
+   }
+}
+
+.nav-header {
+   &__list {
+      display: flex;
+      align-items: center;
+   }
+   &__list > *:not(:last-child) {
+      margin: 0px 50px 0px 0px;
+   }
+   &__link {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: white;
+   }
+}
+
+@media (max-width: 630px) {
+   .header {
+      &__burger {
+         display: block;
+         position: relative;
+         width: 30px;
+         height: 20px;
+         z-index: 3;
+      }
+      &__burger span {
+         position: absolute;
+         background-color: white;
+         left: 0;
+         width: 100%;
+         height: 2px;
+         top: 9px;
+         transition: all 0.3s ease 0s;
+      }
+      &__burger::before,
+      &__burger::after {
+         content: "";
+         background-color: white;
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         left: 0;
+         transition: all 0.3s ease 0s;
+      }
+      &__burger::before {
+         top: 0;
+      }
+      &__burger::after {
+         bottom: 0;
+      }
+      &__burger.active::before {
+         transform: rotate(45deg);
+         top: 9px;
+      }
+      &__burger.active::after {
+         transform: rotate(-45deg);
+         bottom: 9px;
+      }
+      &__burger.active span {
+         transform: scale(0);
+      }
+      &__menu {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+         position: fixed;
+         top: -100%;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         background-color: #121314;
+         padding: 20px;
+         transition: all 0.3s ease 0s;
+      }
+      &__menu.active {
+         top: 0;
+      }
+   }
+	.nav-header {
+		&__list {
+			justify-content: center;
+			flex-direction: column;
+			& > *:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+}
